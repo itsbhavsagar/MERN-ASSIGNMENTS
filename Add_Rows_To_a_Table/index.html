@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Table Rows</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="table-container">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Topic Name</th>
+            <th>Week Number</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be added here using javascript  -->
+        </tbody>
+      </table>
+    </div>
+    <div class="form-container">
+      <h2>Add New Topic</h2>
+      <form id="addRowForm">
+        <label for="topicName">Topic Name:</label>
+        <input type="text" id="topicName" name="topicName" required />
+        <label for="weekNumber">Week Number:</label>
+        <input type="number" id="weekNumber" name="weekNumber" required />
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required />
+        <button type="submit">Add Topic</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
